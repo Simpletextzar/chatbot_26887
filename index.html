@@ -1,8 +1,119 @@
-<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
-<script type="module">
-	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbot Legal – Legislación Peruana</title>
 
-	createChat({
-		webhookUrl: 'https://simple1721.app.n8n.cloud/webhook/80f645b4-ad14-4bbc-be0a-465bdbd1b2c1/chat'
-	});
-</script>
+    <!-- Estilos del chat n8n -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --bg-main: #0e0e11;
+        --bg-card: #16161b;
+        --text-main: #e6e6eb;
+        --text-muted: #9a9aa3;
+        --accent: #3f8cff;
+        --border: #26262c;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+          sans-serif;
+      }
+
+      body {
+        min-height: 100vh;
+        background: radial-gradient(circle at top, #15151c, var(--bg-main));
+        color: var(--text-main);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .container {
+        max-width: 900px;
+        width: 100%;
+        padding: 3rem;
+        background: var(--bg-card);
+        border-radius: 16px;
+        border: 1px solid var(--border);
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        letter-spacing: -0.5px;
+      }
+
+      p {
+        font-size: 1rem;
+        color: var(--text-muted);
+        line-height: 1.6;
+        max-width: 650px;
+        margin: 0 auto 2.5rem;
+      }
+
+      .badge {
+        display: inline-block;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.75rem;
+        border-radius: 999px;
+        background: rgba(63, 140, 255, 0.1);
+        color: var(--accent);
+        border: 1px solid rgba(63, 140, 255, 0.3);
+        margin-bottom: 1rem;
+      }
+
+      .footer {
+        margin-top: 2rem;
+        font-size: 0.8rem;
+        color: var(--text-muted);
+      }
+
+      /* Ajustes visuales del widget de chat */
+      .n8n-chat {
+        --chat--color-primary: var(--accent);
+        --chat--color-background: #0f0f14;
+        --chat--color-text: var(--text-main);
+        --chat--color-secondary: #1c1c24;
+        --chat--border-radius: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="badge">Agente Inteligente</div>
+
+      <h1>Chatbot de Legislación</h1>
+
+      <p>
+        Asistente inteligente diseñado para apoyar el estudio y consulta de
+        normativa legal (Ley 26887 Ley de Sociedades), permitiendo realizar
+        preguntas sobre la ley de forma clara, rápida y precisa. Ideal para
+        estudiantes de Informática y Sistemas.
+      </p>
+
+      <div class="footer">Proyecto académico – Curso de Legislación</div>
+    </div>
+
+    <script type="module">
+      import { createChat } from "https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js";
+
+      createChat({
+        webhookUrl:
+          "https://simple1721.app.n8n.cloud/webhook/80f645b4-ad14-4bbc-be0a-465bdbd1b2c1/chat",
+      });
+    </script>
+  </body>
+</html>
